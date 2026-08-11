@@ -38,7 +38,7 @@ public class Doctor {
     private  boolean active;
     @JsonBackReference
     @ManyToMany(mappedBy = "doctors")
-    private List<petient> petients= new ArrayList<>();
+    private Set<petient> petients;
 
 
 }
