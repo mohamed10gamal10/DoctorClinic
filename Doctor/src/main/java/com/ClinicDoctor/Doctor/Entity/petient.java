@@ -47,11 +47,11 @@ public class petient {
     @JsonManagedReference
 @ManyToMany
     @JoinTable(
-            name="patient_doctor",
+            name="patient_doctor_id",
             joinColumns = @JoinColumn(name="patient_id"),
             inverseJoinColumns = @JoinColumn(name="doctor_id")
     )
-    private List<Doctor>doctors=new ArrayList<>();
+    private Set<Doctor>doctors;
 
 
 
