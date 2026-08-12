@@ -14,7 +14,7 @@ import java.util.UUID;
 @RestController
 public class Doctorcontrol {
 
-    @Autowired
+   
     private final Service service;
 
 
